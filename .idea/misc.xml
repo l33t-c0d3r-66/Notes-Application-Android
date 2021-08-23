@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1125" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/background_transparent.xml" value="0.1125" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/coner_radius_input.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/cursor.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/ic_add.xml" value="0.1125" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/ic_check.xml" value="0.1125" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1125" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/ic_search.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/drawable/rounded_button.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/layout/activity_edit_note.xml" value="0.12952898550724637" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/layout/activity_new_note.xml" value="0.12952898550724637" />
+        <entry key="..\:/Users/AR/AndroidStudioProjects/NotesApplicationAndroid/app/src/main/res/layout/note_item.xml" value="0.12952898550724637" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

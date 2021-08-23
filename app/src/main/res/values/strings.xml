@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Notes-Application-Android</string>
+    <string name="app_name">My Notes</string>
+    <string name="search_text">Search</string>
+    <string name="note_title_text">Enter Title</string>
+    <string name="note_content">Enter Content</string>
+    <string name="notes_date">Today\'s Date</string>
 </resources>
