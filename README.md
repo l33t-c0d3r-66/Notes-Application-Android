@@ -20,6 +20,6 @@ If you think app needs some improvement feel free to leave the suggestions or co
 
 
 # ScreenShots of Project
-<img src="https://github.com/l33t-c0d3r-66/Notes-Application-Android/blob/master/app/src/main/res/Project_Images/1.jpeg"  width="400" height="600"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="https://github.com/l33t-c0d3r-66/Notes-Application-Android/blob/master/app/src/main/res/Project_Images/2.jpeg"  width="400" height="600">
+<img src="https://github.com/l33t-c0d3r-66/Notes-Application-Android/blob/master/app/src/main/res/Project_Images/1.jpeg"  width="400" height="600"> &emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/l33t-c0d3r-66/Notes-Application-Android/blob/master/app/src/main/res/Project_Images/2.jpeg"  width="400" height="600">
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/l33t-c0d3r-66/Notes-Application-Android/blob/master/app/src/main/res/Project_Images/3.jpeg"  width="400" height="600">
