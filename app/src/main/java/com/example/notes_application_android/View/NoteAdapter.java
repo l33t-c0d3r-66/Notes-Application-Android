@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,6 +23,8 @@ import com.example.notes_application_android.Model.Note;
 import com.example.notes_application_android.R;
 import com.example.notes_application_android.Util.ItemClickListener;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -50,9 +54,12 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull NoteAdapter.ViewHolder holder, int position) {
         Note note = noteList.get(position);
 
-        holder.txtTitle.setText(note.getNoteTitle());
-        holder.txtContent.setText(note.getNoteContent());
-        holder.txtDate.setText(note.getModificationDate());
+        holder.titleText.setText(note.getNoteTitle());
+        holder.contentText.setText(note.getNoteContent());
+        if(!note.getModificationDate().equalsIgnoreCase(""))
+            holder.dateText.setText(note.getModificationDate());
+        else
+            holder.dateText.setText(note.getCreationDate());
         holder.color.setBackgroundColor(Color.parseColor(colorList[new Random().nextInt(colorList.length)]));
 
         holder.setItemClickListener(new ItemClickListener() {
@@ -120,16 +127,16 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
 
-        private TextView txtTitle, txtContent, txtDate;
+        private TextView titleText, contentText, dateText;
         private View color;
         private ItemClickListener itemClickListener;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            txtTitle = itemView.findViewById(R.id.txtTitle);
-            txtContent = itemView.findViewById(R.id.txtContent);
-            txtDate = itemView.findViewById(R.id.txtDate);
+            titleText = itemView.findViewById(R.id.titleText);
+            contentText = itemView.findViewById(R.id.contentText);
+            dateText = itemView.findViewById(R.id.dateText);
             color = itemView.findViewById(R.id.color);
 
             itemView.setOnClickListener(this);

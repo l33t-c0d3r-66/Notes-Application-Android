@@ -16,6 +16,11 @@ import com.example.notes_application_android.Database.NoteAppDatabase;
 import com.example.notes_application_android.Model.Note;
 import com.example.notes_application_android.R;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
 public class NewNote extends AppCompatActivity {
 
     private ImageButton saveBtn;
@@ -126,6 +131,9 @@ public class NewNote extends AppCompatActivity {
         String content = contentText.getText().toString();
         note.setNoteTitle(title);
         note.setNoteContent(content);
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = new Date();
+        note.setModificationDate(formatter.format(date));
 
         class UpdateNote extends AsyncTask<Void, Void, Void>
         {
@@ -157,7 +165,9 @@ public class NewNote extends AppCompatActivity {
 
         String title = titleText.getText().toString();
         String content = contentText.getText().toString();
-        Note note = new Note(0,title, content, "","");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = new Date();
+        Note note = new Note(0,title, content, formatter.format(date),"");
         class SaveNote extends AsyncTask<Void, Void, Void>
         {
 
