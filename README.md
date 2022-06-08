@@ -1,6 +1,6 @@
 <h1>Notes-Application-Android</h1>
 <ul>
-<li>A simple and Light Weight Notes Application for Android SmartPhones.</li>
+<li>A Light Weight Notes Application for Android SmartPhones.</li>
 <li>You can now save, Modify and Delete your notes.</li>
 <li>It uses SQLite Database for Storing and Uses Room Persistence Library for Saving.</li>
 <li>AsyncTask is Used to reduce the Load on main Thread and Prevent App from Creashing.</li>
